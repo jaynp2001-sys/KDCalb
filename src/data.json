@@ -1,0 +1,520 @@
+{
+ "event": {
+  "date": "2026-10-25",
+  "tz": "America/New_York",
+  "dateLabel": "Sunday, October 25, 2026",
+  "venue": "BAPS Shri Swaminarayan Mandir",
+  "address": "16 Computer Drive East, Albany, NY 12205",
+  "registerUrl": "https://baps.sl/alb/KDC26",
+  "publicTime": "11:00 AM to 7:30 PM"
+ },
+ "groups": [
+  {
+   "id": "bal",
+   "name": "Bal"
+  },
+  {
+   "id": "balika",
+   "name": "Balika"
+  },
+  {
+   "id": "both",
+   "name": "Both kids",
+   "virtual": true
+  },
+  {
+   "id": "parents",
+   "name": "Parents"
+  }
+ ],
+ "mapSize": {
+  "in": [
+   1280,
+   863
+  ],
+  "out": [
+   1280,
+   717
+  ]
+ },
+ "zones": {
+  "inflatables": "Outside inflatables"
+ },
+ "locations": [
+  {
+   "id": "gym",
+   "name": "Gym",
+   "map": "in",
+   "box": [
+    650,
+    105,
+    395,
+    95
+   ]
+  },
+  {
+   "id": "balika",
+   "name": "Balika Room",
+   "map": "in",
+   "box": [
+    318,
+    100,
+    227,
+    95
+   ]
+  },
+  {
+   "id": "kitchen",
+   "name": "Kitchen",
+   "map": "in",
+   "box": [
+    205,
+    205,
+    130,
+    110
+   ]
+  },
+  {
+   "id": "dining",
+   "name": "Dining Hall",
+   "map": "in",
+   "box": [
+    345,
+    205,
+    285,
+    215
+   ]
+  },
+  {
+   "id": "main",
+   "name": "Main Hall",
+   "map": "in",
+   "box": [
+    640,
+    265,
+    345,
+    160
+   ],
+   "note": "Seating, Sinhasan and Stage."
+  },
+  {
+   "id": "stage",
+   "name": "Stage",
+   "map": "in",
+   "box": [
+    975,
+    240,
+    120,
+    125
+   ]
+  },
+  {
+   "id": "bhakti",
+   "name": "Bhakti Hall",
+   "map": "in",
+   "box": [
+    160,
+    320,
+    160,
+    235
+   ]
+  },
+  {
+   "id": "bal",
+   "name": "Bal Room",
+   "map": "in",
+   "box": [
+    425,
+    462,
+    185,
+    95
+   ]
+  },
+  {
+   "id": "rest",
+   "name": "Restrooms",
+   "map": "in",
+   "box": [
+    615,
+    462,
+    162,
+    95
+   ],
+   "note": "Women's and men's."
+  },
+  {
+   "id": "medical",
+   "name": "Medical Office",
+   "map": "in",
+   "box": [
+    780,
+    462,
+    90,
+    95
+   ]
+  },
+  {
+   "id": "exit",
+   "name": "Shayona / Exit",
+   "map": "in",
+   "box": [
+    880,
+    462,
+    145,
+    95
+   ]
+  },
+  {
+   "id": "parking",
+   "name": "Parking Lot",
+   "map": "in",
+   "box": [
+    150,
+    590,
+    960,
+    200
+   ]
+  },
+  {
+   "id": "obstacle",
+   "name": "Obstacle Course",
+   "map": "out",
+   "zone": "inflatables",
+   "box": [
+    105,
+    150,
+    135,
+    365
+   ]
+  },
+  {
+   "id": "drop",
+   "name": "Toxic Drop Down Course",
+   "map": "out",
+   "zone": "inflatables",
+   "box": [
+    370,
+    190,
+    550,
+    140
+   ]
+  },
+  {
+   "id": "slide",
+   "name": "Green Slide",
+   "map": "out",
+   "zone": "inflatables",
+   "box": [
+    1005,
+    140,
+    180,
+    150
+   ]
+  },
+  {
+   "id": "melt",
+   "name": "Toxic Meltdown",
+   "map": "out",
+   "zone": "inflatables",
+   "box": [
+    420,
+    360,
+    210,
+    215
+   ]
+  },
+  {
+   "id": "hippo",
+   "name": "Hungry Hippo",
+   "map": "out",
+   "zone": "inflatables",
+   "box": [
+    640,
+    360,
+    210,
+    215
+   ]
+  },
+  {
+   "id": "bounce",
+   "name": "GO Bounce Houses",
+   "map": "out",
+   "zone": "inflatables",
+   "box": [
+    860,
+    340,
+    340,
+    140
+   ]
+  },
+  {
+   "id": "food",
+   "name": "Food Stand",
+   "map": "out",
+   "box": [
+    265,
+    480,
+    125,
+    100
+   ],
+   "note": "Snacks and drinks outside."
+  },
+  {
+   "id": "clear",
+   "name": "Keep Clear Zone",
+   "map": "out",
+   "box": [
+    1062,
+    508,
+    170,
+    140
+   ],
+   "note": "Keep this area clear."
+  }
+ ],
+ "activities": [
+  {
+   "id": "a1",
+   "name": "Registration, Ice Breakers and Welcome",
+   "groups": [
+    "balika"
+   ],
+   "locs": [
+    "dining"
+   ],
+   "where": "Dining Area",
+   "start": "11:00 AM",
+   "end": "12:30 PM",
+   "desc": "Check in, play ice breakers and join the welcome."
+  },
+  {
+   "id": "a1b",
+   "name": "Registration, Activities and Welcome",
+   "groups": [
+    "bal"
+   ],
+   "locs": [
+    "dining"
+   ],
+   "where": "Dining Area",
+   "start": "11:00 AM",
+   "end": "12:30 PM",
+   "desc": "Check in, join the activities and the welcome."
+  },
+  {
+   "id": "a2",
+   "name": "Mahapuja and Annakut",
+   "groups": [
+    "bal",
+    "balika",
+    "parents"
+   ],
+   "locs": [
+    "main"
+   ],
+   "where": "Main Hall",
+   "start": "12:30 PM",
+   "end": "1:15 PM",
+   "desc": "Mahapuja and Annakut in the Main Hall."
+  },
+  {
+   "id": "a3",
+   "name": "Lunch",
+   "groups": [
+    "bal",
+    "balika",
+    "parents"
+   ],
+   "locs": [
+    "dining"
+   ],
+   "where": "Dining Hall",
+   "start": "1:15 PM",
+   "end": "2:00 PM",
+   "desc": "Lunch in the Dining Hall."
+  },
+  {
+   "id": "a4",
+   "name": "Parent Awareness Session",
+   "groups": [
+    "parents"
+   ],
+   "locs": [
+    "bhakti"
+   ],
+   "where": "Bhakti Hall",
+   "start": "1:30 PM",
+   "end": "1:50 PM",
+   "desc": "Session for parents in Bhakti Hall."
+  },
+  {
+   "id": "a5",
+   "name": "Bounce Houses",
+   "groups": [
+    "bal"
+   ],
+   "locs": [
+    "obstacle",
+    "drop",
+    "slide",
+    "melt",
+    "hippo",
+    "bounce"
+   ],
+   "where": "Parking lot",
+   "start": "2:00 PM",
+   "end": "3:45 PM",
+   "desc": "Outside inflatables: Obstacle Course, Toxic Drop Down Course, Green Slide, Toxic Meltdown, Hungry Hippo and GO Bounce Houses."
+  },
+  {
+   "id": "a6",
+   "name": "Games and Carnival",
+   "groups": [
+    "balika"
+   ],
+   "locs": [
+    "gym",
+    "main"
+   ],
+   "where": "Gym + Main Hall",
+   "start": "2:00 PM",
+   "end": "3:45 PM",
+   "desc": "Carnival games in the Gym and the Main Hall."
+  },
+  {
+   "id": "a7",
+   "name": "Games and Carnival",
+   "groups": [
+    "bal"
+   ],
+   "locs": [
+    "gym",
+    "main"
+   ],
+   "where": "Gym + Main Hall",
+   "start": "3:45 PM",
+   "end": "5:15 PM",
+   "desc": "Carnival games in the Gym and the Main Hall."
+  },
+  {
+   "id": "a8",
+   "name": "Bounce Houses",
+   "groups": [
+    "balika"
+   ],
+   "locs": [
+    "obstacle",
+    "drop",
+    "slide",
+    "melt",
+    "hippo",
+    "bounce"
+   ],
+   "where": "Parking lot",
+   "start": "3:45 PM",
+   "end": "5:15 PM",
+   "desc": "Outside inflatables: Obstacle Course, Toxic Drop Down Course, Green Slide, Toxic Meltdown, Hungry Hippo and GO Bounce Houses."
+  },
+  {
+   "id": "a9",
+   "name": "Program",
+   "groups": [
+    "bal",
+    "balika",
+    "parents"
+   ],
+   "locs": [
+    "main"
+   ],
+   "where": "Main Hall",
+   "start": "5:15 PM",
+   "end": "6:30 PM",
+   "desc": "The main program, where kids learn the message of The Light Within."
+  },
+  {
+   "id": "a10",
+   "name": "Aarti",
+   "groups": [
+    "bal",
+    "balika",
+    "parents"
+   ],
+   "locs": [
+    "parking"
+   ],
+   "where": "Parking lot",
+   "start": "6:30 PM",
+   "end": "6:45 PM",
+   "desc": "Aarti in the parking lot."
+  },
+  {
+   "id": "a11",
+   "name": "Dinner and Smruti Bhet",
+   "groups": [
+    "bal",
+    "balika",
+    "parents"
+   ],
+   "locs": [
+    "dining"
+   ],
+   "where": "Dining Hall",
+   "start": "6:45 PM",
+   "end": "7:30 PM",
+   "desc": "Dinner and Smruti Bhet in the Dining Hall."
+  },
+  {
+   "id": "a12",
+   "name": "Parent Awareness Session",
+   "groups": [
+    "parents"
+   ],
+   "locs": [
+    "bhakti"
+   ],
+   "where": "Bhakti Hall",
+   "start": "6:55 PM",
+   "end": "7:15 PM",
+   "desc": "Session for parents in Bhakti Hall."
+  },
+  {
+   "id": "a13",
+   "name": "Clean Up (all hands)",
+   "groups": [
+    "bal",
+    "balika"
+   ],
+   "locs": [],
+   "where": "Mandir",
+   "start": "7:30 PM",
+   "end": "9:00 PM",
+   "desc": "Everyone helps clean up at the Mandir.",
+   "internal": true
+  }
+ ],
+ "groupNotes": {
+  "parents": "Parents join Mahapuja, the Program, Aarti and meals. The two Parent Awareness Sessions in Bhakti Hall run during lunch and dinner."
+ },
+ "info": [
+  {
+   "t": "Check in",
+   "p": "Registration opens at 11:00 AM in the Dining Area."
+  },
+  {
+   "t": "Groups",
+   "p": "Bal does the bounce houses first, then games. Balika does games first, then the bounce houses."
+  },
+  {
+   "t": "Parents",
+   "p": "Parent Awareness Sessions are in Bhakti Hall at 1:30 PM and 6:55 PM, during lunch and dinner."
+  },
+  {
+   "t": "Dress for the weather",
+   "p": "The inflatables and Aarti are outdoors."
+  },
+  {
+   "t": "Free to attend",
+   "p": "There is no fee. Registration is free and walk-ins are welcome."
+  }
+ ]
+}
