@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://albkdchub.vercel.app/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/favicon.png">
 <style>html{color-scheme:light}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
@@ -11,7 +12,7 @@
 <meta name="description" content="Schedule, campus maps and info for Albany Kids' Diwali Celebration, Sunday, October 25, 2026. Free to attend.">
 <meta property="og:title" content="Albany KDC">
 <meta property="og:description" content="Schedule, campus maps and info for Albany Kids' Diwali Celebration, Sunday, October 25, 2026. Free to attend.">
-<meta property="og:image" content="assets/og.jpg">
+<meta property="og:image" content="https://albkdchub.vercel.app/assets/og.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@500;700;800&display=swap">
 <style>
@@ -68,7 +69,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 .tnote{display:block;font-weight:700;font-size:.8rem;opacity:.9}
 .tools{display:flex;flex-wrap:wrap;gap:10px}
 
-#view-schedule,#view-maps{display:flex;flex-direction:column;gap:40px}
+#view-schedule,#view-maps,#view-info{display:flex;flex-direction:column;gap:40px}
 .snav .tabs{padding:0}
 
 /* sticky nav */
@@ -249,11 +250,12 @@ footer{position:relative;margin-top:10px;background:var(--plate);color:#fff;font
   </section>
 
 
+  </div>
+  <div id="view-info" hidden>
   <section id="info">
     <div class="sec-head"><h2>Good to Know</h2></div>
     <div class="info" id="info-grid"></div>
   </section>
-
   </div>
   <div id="view-maps" hidden>
   <section id="map">
@@ -294,6 +296,8 @@ footer{position:relative;margin-top:10px;background:var(--plate);color:#fff;font
 
   <footer>
     <a class="top brick c-yellow" href="#top">Back to top</a>
+    <a class="top brick c-yellow" id="ann-btn" href="#" target="_blank" rel="noopener" hidden>Join our Announcement Channel</a>
+    <a class="top brick c-yellow" id="spon-btn" href="#" target="_blank" rel="noopener" hidden>Sponsor this event</a>
     <span id="foot"></span>
   </footer>
 </div>
@@ -302,15 +306,15 @@ footer{position:relative;margin-top:10px;background:var(--plate);color:#fff;font
 
 
 /* ===== Data generated from src/data.json. Do not edit here. ===== */
-const EVENT = {"date": "2026-10-25", "tz": "America/New_York", "dateLabel": "Sunday, October 25, 2026", "venue": "BAPS Shri Swaminarayan Mandir", "address": "16 Computer Drive East, Albany, NY 12205", "registerUrl": "https://baps.sl/alb/KDC26", "publicTime": "11:00 AM to 7:30 PM"};
+const EVENT = {"date": "2026-10-25", "tz": "America/New_York", "dateLabel": "Sunday, October 25, 2026", "venue": "BAPS Shri Swaminarayan Mandir", "address": "16 Computer Drive East, Albany, NY 12205", "registerUrl": "https://baps.sl/alb/KDC26", "publicTime": "11:00 AM to 7:30 PM", "announceUrl": "https://t.me/+xegcR_Bzb4cwZDBh", "sponsorUrl": "https://baps.sl/alb/DiwalSponsorship"};
 const GROUPS = [{"id": "bal", "name": "Bal"}, {"id": "balika", "name": "Balika"}, {"id": "both", "name": "Both kids", "virtual": true}, {"id": "parents", "name": "Parents"}];
 const KIDS = ["bal","balika"];
 const MAP_SIZE = {"in": [1280, 863], "out": [1280, 717]};
 const ZONES = {"inflatables": "Outside inflatables"};
 const LOCATIONS = [{"id": "gym", "name": "Gym", "map": "in", "box": [650, 105, 395, 95]}, {"id": "balika", "name": "Balika Room", "map": "in", "box": [318, 100, 227, 95]}, {"id": "kitchen", "name": "Kitchen", "map": "in", "box": [205, 205, 130, 110]}, {"id": "dining", "name": "Dining Hall", "map": "in", "box": [345, 205, 285, 215]}, {"id": "main", "name": "Main Hall", "map": "in", "box": [640, 265, 345, 160], "note": "Seating, Sinhasan and Stage."}, {"id": "stage", "name": "Stage", "map": "in", "box": [975, 240, 120, 125]}, {"id": "bhakti", "name": "Bhakti Hall", "map": "in", "box": [160, 320, 160, 235]}, {"id": "bal", "name": "Bal Room", "map": "in", "box": [425, 462, 185, 95]}, {"id": "rest", "name": "Restrooms", "map": "in", "box": [615, 462, 162, 95], "note": "Women's and men's."}, {"id": "medical", "name": "Medical Office", "map": "in", "box": [780, 462, 90, 95]}, {"id": "exit", "name": "Shayona / Exit", "map": "in", "box": [880, 462, 145, 95]}, {"id": "parking", "name": "Parking Lot", "map": "in", "box": [150, 590, 960, 200]}, {"id": "obstacle", "name": "Obstacle Course", "map": "out", "zone": "inflatables", "box": [105, 150, 135, 365]}, {"id": "drop", "name": "Toxic Drop Down Course", "map": "out", "zone": "inflatables", "box": [370, 190, 550, 140]}, {"id": "slide", "name": "Green Slide", "map": "out", "zone": "inflatables", "box": [1005, 140, 180, 150]}, {"id": "melt", "name": "Toxic Meltdown", "map": "out", "zone": "inflatables", "box": [420, 360, 210, 215]}, {"id": "hippo", "name": "Hungry Hippo", "map": "out", "zone": "inflatables", "box": [640, 360, 210, 215]}, {"id": "bounce", "name": "GO Bounce Houses", "map": "out", "zone": "inflatables", "box": [860, 340, 340, 140]}, {"id": "food", "name": "Food Stand", "map": "out", "box": [265, 480, 125, 100], "note": "Snacks and drinks outside."}, {"id": "clear", "name": "Keep Clear Zone", "map": "out", "box": [1062, 508, 170, 140], "note": "Keep this area clear."}];
-const ACTIVITIES = [{"id": "a1", "name": "Registration, Ice Breakers and Welcome", "g": ["balika"], "locs": ["dining"], "where": "Dining Area", "s": 660, "e": 750, "d": "Check in, play ice breakers and join the welcome."}, {"id": "a1b", "name": "Registration, Activities and Welcome", "g": ["bal"], "locs": ["dining"], "where": "Dining Area", "s": 660, "e": 750, "d": "Check in, join the activities and the welcome."}, {"id": "a2", "name": "Mahapuja and Annakut", "g": ["bal", "balika", "parents"], "locs": ["main"], "where": "Main Hall", "s": 750, "e": 795, "d": "Mahapuja and Annakut in the Main Hall."}, {"id": "a3", "name": "Lunch", "g": ["bal", "balika", "parents"], "locs": ["dining"], "where": "Dining Hall", "s": 795, "e": 840, "d": "Lunch in the Dining Hall."}, {"id": "a4", "name": "Parent Awareness Session", "g": ["parents"], "locs": ["bhakti"], "where": "Bhakti Hall", "s": 810, "e": 830, "d": "Session for parents in Bhakti Hall."}, {"id": "a5", "name": "Bounce Houses", "g": ["bal"], "locs": ["obstacle", "drop", "slide", "melt", "hippo", "bounce"], "where": "Parking lot", "s": 840, "e": 945, "d": "Outside inflatables: Obstacle Course, Toxic Drop Down Course, Green Slide, Toxic Meltdown, Hungry Hippo and GO Bounce Houses."}, {"id": "a6", "name": "Games and Carnival", "g": ["balika"], "locs": ["gym", "main"], "where": "Gym + Main Hall", "s": 840, "e": 945, "d": "Carnival games in the Gym and the Main Hall."}, {"id": "a7", "name": "Games and Carnival", "g": ["bal"], "locs": ["gym", "main"], "where": "Gym + Main Hall", "s": 945, "e": 1035, "d": "Carnival games in the Gym and the Main Hall."}, {"id": "a8", "name": "Bounce Houses", "g": ["balika"], "locs": ["obstacle", "drop", "slide", "melt", "hippo", "bounce"], "where": "Parking lot", "s": 945, "e": 1035, "d": "Outside inflatables: Obstacle Course, Toxic Drop Down Course, Green Slide, Toxic Meltdown, Hungry Hippo and GO Bounce Houses."}, {"id": "a9", "name": "Program", "g": ["bal", "balika", "parents"], "locs": ["main"], "where": "Main Hall", "s": 1035, "e": 1110, "d": "The main program, where kids learn the message of The Light Within."}, {"id": "a10", "name": "Aarti", "g": ["bal", "balika", "parents"], "locs": ["parking"], "where": "Parking lot", "s": 1110, "e": 1125, "d": "Aarti in the parking lot."}, {"id": "a11", "name": "Dinner and Smruti Bhet", "g": ["bal", "balika", "parents"], "locs": ["dining"], "where": "Dining Hall", "s": 1125, "e": 1170, "d": "Dinner and Smruti Bhet in the Dining Hall."}, {"id": "a12", "name": "Parent Awareness Session", "g": ["parents"], "locs": ["bhakti"], "where": "Bhakti Hall", "s": 1135, "e": 1155, "d": "Session for parents in Bhakti Hall."}];
-const GROUP_NOTES = {"parents": "Parents join Mahapuja, the Program, Aarti and meals. The two Parent Awareness Sessions in Bhakti Hall run during lunch and dinner."};
-const INFO = [{"t": "Check in", "p": "Registration opens at 11:00 AM in the Dining Area."}, {"t": "Groups", "p": "Bal does the bounce houses first, then games. Balika does games first, then the bounce houses."}, {"t": "Parents", "p": "Parent Awareness Sessions are in Bhakti Hall at 1:30 PM and 6:55 PM, during lunch and dinner."}, {"t": "Dress for the weather", "p": "The inflatables and Aarti are outdoors."}, {"t": "Free to attend", "p": "There is no fee. Registration is free and walk-ins are welcome."}];
+const ACTIVITIES = [{"id": "a1", "name": "Registration, Ice Breakers and Welcome", "g": ["balika"], "locs": ["dining"], "where": "Dining Area", "s": 660, "e": 750, "d": "Check in, play ice breakers and join the welcome."}, {"id": "a1b", "name": "Registration, Activities and Welcome", "g": ["bal"], "locs": ["dining"], "where": "Dining Area", "s": 660, "e": 750, "d": "Check in, join the activities and the welcome."}, {"id": "a2", "name": "Mahapuja and Annakut", "g": ["bal", "balika", "parents"], "locs": ["main"], "where": "Main Hall", "s": 750, "e": 795, "d": "Mahapuja and Annakut in the Main Hall."}, {"id": "a3", "name": "Lunch", "g": ["bal", "balika", "parents"], "locs": ["dining"], "where": "Dining Hall", "s": 795, "e": 840, "d": "Lunch in the Dining Hall."}, {"id": "a4", "name": "Parent Meeting", "g": ["parents"], "locs": ["bal"], "where": "Bal Room", "s": 795, "e": 825, "d": "Parent meeting in the Bal Room."}, {"id": "a5", "name": "Bounce Houses", "g": ["bal"], "locs": ["obstacle", "drop", "slide", "melt", "hippo", "bounce"], "where": "Parking lot", "s": 840, "e": 945, "d": "Outside inflatables: Obstacle Course, Toxic Drop Down Course, Green Slide, Toxic Meltdown, Hungry Hippo and GO Bounce Houses."}, {"id": "a6", "name": "Games and Carnival", "g": ["balika"], "locs": ["gym", "main"], "where": "Gym + Main Hall", "s": 840, "e": 945, "d": "Carnival games in the Gym and the Main Hall."}, {"id": "a7", "name": "Games and Carnival", "g": ["bal"], "locs": ["gym", "main"], "where": "Gym + Main Hall", "s": 945, "e": 1035, "d": "Carnival games in the Gym and the Main Hall."}, {"id": "a8", "name": "Bounce Houses", "g": ["balika"], "locs": ["obstacle", "drop", "slide", "melt", "hippo", "bounce"], "where": "Parking lot", "s": 945, "e": 1035, "d": "Outside inflatables: Obstacle Course, Toxic Drop Down Course, Green Slide, Toxic Meltdown, Hungry Hippo and GO Bounce Houses."}, {"id": "a9", "name": "Program", "g": ["bal", "balika", "parents"], "locs": ["main"], "where": "Main Hall", "s": 1035, "e": 1110, "d": "The main program, where kids learn the message of The Light Within."}, {"id": "a10", "name": "Aarti", "g": ["bal", "balika", "parents"], "locs": ["parking"], "where": "Parking lot", "s": 1110, "e": 1125, "d": "Aarti in the parking lot."}, {"id": "a11", "name": "Dinner and Smruti Bhet", "g": ["bal", "balika", "parents"], "locs": ["dining"], "where": "Dining Hall", "s": 1125, "e": 1170, "d": "Dinner and Smruti Bhet in the Dining Hall."}, {"id": "a12", "name": "Parent Meeting", "g": ["parents"], "locs": ["bal"], "where": "Bal Room", "s": 1125, "e": 1155, "d": "Parent meeting in the Bal Room."}];
+const GROUP_NOTES = {"parents": "Parents join Mahapuja, the Program, Aarti and meals. The two parent meetings are in the Bal Room at 1:15 PM (during lunch) and 6:45 PM (during dinner)."};
+const INFO = [{"t": "Check in", "p": "Registration opens at 11:00 AM in the Dining Area."}, {"t": "Parents", "p": "Parent meetings are in the Bal Room at 1:15 PM and 6:45 PM, during lunch and dinner. Parents are encouraged to stay and enjoy the day with their kids."}, {"t": "Dress for the weather", "p": "The inflatables and Aarti are outdoors."}, {"t": "Food allergies", "p": "When you register, please let the registration team know about any food allergies. All parents should also watch out for their kids."}, {"t": "Free to attend", "p": "There is no fee. Registration is free and walk-ins are welcome."}];
 /* ===== end data ===== */
 
 const $=s=>document.querySelector(s);
@@ -551,15 +555,16 @@ $("#maps-link").href="https://www.google.com/maps/search/?api=1&query="+encodeUR
 $("#foot").textContent=EVENT.venue+", "+EVENT.address;
 if(EVENT.registerUrl){const b=$("#reg-btn");b.href=EVENT.registerUrl;b.hidden=false;}
 $("#info-grid").innerHTML=INFO.map(i=>'<div><h3>'+esc(i.t)+'</h3><p>'+esc(i.p)+'</p></div>').join("");
-if(!INFO.length)$("#info").hidden=true;
+if(EVENT.announceUrl){const b=$("#ann-btn");b.href=EVENT.announceUrl;b.hidden=false;}
+if(EVENT.sponsorUrl){const b=$("#spon-btn");b.href=EVENT.sponsorUrl;b.hidden=false;}
 
 buildHotspots();
 const setGroupTab=makeTabs($("#grp-tabs"),GROUPS.map(g=>({id:g.id,name:g.name,cls:GRP_CLS[g.id]})),"sched-panel",id=>{curView=id;try{localStorage.setItem("kdcView",id)}catch(e){}renderSchedule();renderNow();});
 mapActivate.fn=makeTabs($("#map-tabs"),[{id:"in",name:"Inside the building",cls:"c-shared"},{id:"out",name:"Outside inflatables",cls:"c-shared"}],"map-panel",k=>{
   curMap=k;$("#mv-in").hidden=k!=="in";$("#mv-out").hidden=k!=="out";renderLocList();renderSelBox();paintSel();
 });
-const showView=makeTabs($("#view-tabs"),[{id:"schedule",name:"Schedule",cls:"c-shared"},{id:"maps",name:"Maps",cls:"c-shared"}],"view-panel",id=>{
-  $("#view-schedule").hidden=id!=="schedule";$("#view-maps").hidden=id!=="maps";
+const showView=makeTabs($("#view-tabs"),[{id:"schedule",name:"Schedule",cls:"c-shared"},{id:"maps",name:"Maps",cls:"c-shared"},{id:"info",name:"Good to Know",cls:"c-shared"}],"view-panel",id=>{
+  $("#view-schedule").hidden=id!=="schedule";$("#view-maps").hidden=id!=="maps";$("#view-info").hidden=id!=="info";
   if(id==="schedule")renderNow();
 });
 let startView="bal";try{const s=localStorage.getItem("kdcView");if(s&&GROUPS.some(g=>g.id===s))startView=s;}catch(e){}
@@ -576,7 +581,8 @@ $("#zoom-btn").addEventListener("click",()=>{
 function goTo(h){
   if(!h||/^t\d{3,4}$/.test(h))return;
   const smooth={behavior:reduceMotion()?"auto":"smooth"};
-  if(h==="schedule"||h==="info"){showView("schedule",false);if(h==="info")$("#info").scrollIntoView(smooth);return;}
+  if(h==="schedule"){showView("schedule",false);return;}
+  if(h==="info"){showView("info",false);return;}
   if(h==="maps"||h==="map"){showView("maps",false);return;}
   const a=ACTIVITIES.find(x=>x.id===h);
   const ids=a?a.locs:(LOCATIONS.some(l=>l.id===h)?[h]:[]);
